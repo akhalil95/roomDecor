@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorate Your Own Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Zilla+Slab:300,400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94317a1dc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- modal wrapper -->
+        <div class="wrapper">
+            <div class="written-content">
+                <h1><span class="highlight">Decorate your own room!</span></h1>
+                <p>Use the selection below to decorate your dream room.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+    <div class="wrapper flex-container">
+        <!-- Form -->
+        <div class="options">
+            <h2><span class="highlight">Choose a bed:</span></h2>
+            <form class="bed" action="">
+                <input aria-hidden="true" class="item" type="radio" name="sleeping" id="bed-1" value="bed-1" >
+                <label aria-label="Click to add bed option 1" class="bed-1" for="bed-1">Option 1</label>
+
+                <input aria-hidden="true" class="item" type="radio" name="sleeping" id="bed-2" value="bed-2" >
+                <label aria-label="Click to add bed option 2" class="bed-2" for="bed-2">Option 2</label>
+
+                <input aria-hidden="true" class="item" type="radio" name="sleeping" id="bed-3" value="bed-3">
+                <label aria-label="Click to add bed option 3" class="bed-3" for="bed-3">Option 3</label>
+            </form>
+            <h2><span class="highlight">Accessorize your room:</span></h2>
+            <form class="accessories" action="">
+                <input aria-hidden='true' class="item animal" type="checkbox" name="" id="cat" value="cat">
+                <label aria-label="Click to add a cat" class="cat" for="cat">Cat</label>
+
+                <input aria-hidden='true' class="item animal" type="checkbox" name="" id="dog" value="dog">
+                <label aria-label="Click to add a dog" class="dog" for="dog">Dog</label>
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="rug" value="rug">
+                <label aria-label="Click to add a rug" class="rug" for="rug">Rug</label>
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp" value="lamp">
+                <label aria-label="Click to add a lamp" class="lamp" for="lamp">Lamp</label>
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="cabinet" value="cabinet">
+                <label aria-label="Click to add a cabinet" class="cabinet" for="cabinet">Cabinet</label>
+            </form>
+        </div>
+
+        <!-- images -->
+        <div class="canvas">
+            <div class="img-container bed-3 radio">
+                <img src="images/bed3.png" alt="This is bed option 3" >
+            </div>
+            <div class="img-container bed-1 radio">
+                <img src="images/bed1.png" alt="This is bed option 1" >
+            </div>
+            <div class="img-container bed-2 radio">
+                <img src="images/bed2.png" alt="This is bed option 2" >
+            </div>
+            <div class="img-container cat ">
+                <img src="images/cat.png" alt="This is a cat">
+            </div>
+            <div class="img-container dog ">
+                <img src="images/dog.png" alt="This is a dog">
+            </div>
+            <div class="img-container rug ">
+                <img src="images/rug.png" alt="This is a rug">
+            </div>
+            <div class="img-container lamp ">
+                <img src="images/lamp.png" alt="This is a lamp">
+            </div>
+            <div class="img-container cabinet ">
+                <img src="images/cabinet.png" alt="This is a cabinet">
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Ayesha Khalil
+        </p>
+        <a href ="https://github.com/akhalil95" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+    </footer>
+    
+      <!-- jQuery library -->
+      <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+      <!-- alert library -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+      <!-- JS -->
+      <script src="app.js"></script>
+</body>
+</html>
